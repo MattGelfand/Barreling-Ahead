@@ -1,0 +1,437 @@
+* {
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+@font-face { 
+	font-family: tiza; src: url('tiza.TTF'); 
+} 
+@font-face { 
+	font-family: Fanwood; src: url('Fanwood.otf'); 
+} 
+@font-face { 
+	font-family: League Gothic; src: url('League Gothic.ttf'); 
+} 
+
+/*boilerplate
+
+section {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+section.section-break {
+	margin-top: 60px;
+	padding-top: 100px;
+}
+.storytitle {
+	padding-bottom: 20px;
+	text-align: center;
+}
+.storytitle h1 {
+	text-transform: uppercase;
+	margin-bottom:0px;
+}
+p.lead {
+	font-size:24px;
+	line-height:36px;
+}
+blockquote.strong-quote {
+	padding:0;
+	margin:0;
+	border:none;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+blockquote.strong-quote p{
+	font-size:30px;
+	line-height:38px;
+	font-weight: bold;
+}
+.my-background-example {
+	padding: 20px;
+	background-image: url(http://farm9.staticflickr.com/8501/8316081118_da9eb027f8_o.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+}
+.carousel-caption {
+	position: static;
+}
+
+end boilerplate*/
+
+
+body {
+	margin: 0 auto;
+}
+
+
+.ia {
+	text-align: center;
+}
+
+.container {
+	padding-top: 50px;
+}
+
+.paralax {
+	background: url(../img/wood.JPG);
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	background-size:cover;
+	padding: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+img.crafthed {
+	position: absolute;
+	right: 10px;
+	top: 200px;
+	height: 2000px;
+	width: 2000px;
+	text-shadow:0px 2px 1px #333333;
+	margin: 0 auto;
+
+}
+
+p {
+	font-size: 1.2em;
+	font-family: Fanwood, sans-serif;
+	line-height: 30px;
+}
+
+a {
+	color: white;
+	text-shadow: 0px 2px 3px #555;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+div.double-lines {
+	width: 50%;
+	margin-left: 25%;
+}
+	
+
+span {
+	font-size: 2.5em;
+	line-height: 1em;
+	color: #fff;
+	text-shadow: 0px 4px 3px #555;
+}
+
+
+.span6 {
+	width:300px;
+	display:block;
+	font-family: garamond;
+}
+
+p.span6 {
+	width: 100%;
+}
+
+div.span12 {
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+.lead {
+	font-size: 1.9em;
+}
+
+p.lead {
+	line-height: 40px;
+}
+
+h2, h3 {
+font-family: Fanwood, sans-serif;
+}
+
+
+
+/* Beer mug likely to be deleted
+.beermug {
+	text-align: center;
+	-webkit-transition: 1.5s all;
+	-moz-transition: 1.5s all;
+	transition: 1.5s all;
+	padding-bottom: 450px;
+}
+
+.beermug:hover {
+	-webkit-transform:rotate(-57.5deg);
+	-moz-transform: rotate(-57.5deg);
+	transform:rotate(-57.5deg);
+}
+*/
+
+.decorations {
+	text-align: center;
+	padding-bottom: 5%;
+	margin: 0 auto;
+}
+
+.decorations p {
+	margin-left: 65px;
+	font-style: it
+}
+
+h3.meet {
+	text-align: center;
+	padding: 50px 0 50px 0;
+	font-size: 100px;
+}
+
+#row1 {
+	margin: 0 auto;
+	padding-bottom: 10%;
+}
+
+
+.img-circle {
+	opacity: .75;
+	transition: 0.7s all;
+	-moz-transition: 0.7s all;
+  	-webkit-transition: 0.7s all;
+}
+
+.img-circle:hover {
+	opacity: 1;
+	transform: rotate(7.6deg);
+	-webkit-transform: rotate(7.6deg);
+}
+
+.small {
+	padding-top: 10px;
+}
+
+img.img-circle {
+/*put transitions here*/
+}
+
+
+/*LAKEFRONT*/
+
+#lakefront {
+	background: url(../img/russ.png) no-repeat;
+	position:relative;
+	padding: 200px 200px;
+	background-attachment: fixed;	
+	background-size:cover;
+	overflow: hidden;
+
+}
+
+.info-l {
+    background:rgba(160,96,0,.7);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 2%;
+}
+
+.info-l h1 {
+	font-family: tiza;
+	font-size: 30px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.info-l h3 {
+	font-family: tiza;
+	font-size: 20px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+div#lakefront.row {
+	padding:20%;
+}
+
+/*MILLERCOORS*/
+
+#millerCoors {
+	background: url(../img/jeff.png) no-repeat;
+	position:relative;
+	padding: 200px 200px;
+	background-attachment: fixed;	
+	background-size:cover;
+	overflow: hidden;
+}
+
+.info-mc {
+    background:rgba(160,96,0,.7);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2%;
+    text-align: center;
+
+ }
+
+.info-mc h1 {
+    font-family: tiza;
+	font-size: 30px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.info-mc h3 {
+    font-family: tiza;
+	font-size: 20px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+div#millerCoors.row {
+	padding:25%;
+}
+
+/* MILWAUKEE */
+
+#mkb {
+	background: url(../img/jim.png) no-repeat;
+	position:relative;
+	padding: 200px 200px;
+	background-attachment: fixed;	
+	background-size:cover;
+	overflow: hidden;
+}
+
+
+.info-mk {
+    background:rgba(35,5,68,0.8);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 3%;
+}
+
+div#mkb.row {
+	padding:25%;
+}
+
+.info-mk h1 {
+	font-family: tiza;
+	font-size: 30px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.info-mk h3 {
+	font-family: tiza;
+	font-size: 20px;
+	color: #C9C1B4;
+	text-shadow: 0px 2px 3px #555;
+}
+
+/*TEMPERANCE*/
+
+#temperance {
+	background: url(../img/gilbert.png) no-repeat;
+	position:relative;
+	padding: 200px 200px;
+	background-attachment: fixed;	
+	background-size:cover;
+	overflow: hidden;
+}	
+
+
+.info-t {
+    background:rgba(53,2,66,0.8);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 3%;
+    text-align: center;
+}
+
+div#temperance.row {
+	padding:25%;
+}
+
+.info-t h1 {
+	font-family: tiza;
+	font-size: 30px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.info-t h3 {
+	font-family: tiza;
+	font-size: 20px;
+	color: #C9C1B4;
+	text-shadow: 0px 2px 3px #555;
+}
+
+/* POLLYANNA */
+
+#pollyanna {
+	background: url(../img/brian.png) no-repeat;
+	position:relative;
+	padding: 200px 200px;
+	background-attachment: fixed;	
+	background-size:cover;
+	overflow: hidden;
+}
+
+.info-p {
+    background:rgba(180,5,0,.7);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 3%;
+    text-align: center;
+}
+
+.info-p h1 {
+	font-family: tiza;
+	font-size: 30px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.info-p h3 {
+	font-family: tiza;
+	font-size: 20px;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
+}
+
+div#pollyanna.row {
+	padding:25%;
+}
+
+.fa-arrow-up {
+  	position: fixed;
+  	bottom: 15px;
+  	right: 0;
+  	border: 5px solid black;
+  	font-size: 50px;
+  	color: #222;
+  	z-index: 1;
+}
+ .fa-arrow-up:hover {
+ 	color: #768585;
+ }
+
+    
+ul {
+list-style-type: none;
+}
