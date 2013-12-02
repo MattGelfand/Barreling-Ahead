@@ -1,11 +1,10 @@
-$(document).ready(function() {
-
-
 function jumpTo(input) {
   $('body').animate({
       scrollTop: $(input).offset().top
     }, 800);
 };
+
+$(document).ready(function() {
       
 var ev = [{
     id : 1,
