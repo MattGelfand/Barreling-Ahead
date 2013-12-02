@@ -5,81 +5,144 @@
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
-@font-face { 
-	font-family: tiza; src: url('tiza.TTF'); 
-} 
+
 @font-face { 
 	font-family: Fanwood; src: url('Fanwood.otf'); 
 } 
+
 @font-face { 
-	font-family: League Gothic; src: url('League Gothic.ttf'); 
+	font-family: Contra; src: url('Contra.ttf'); 
 } 
 
-/*boilerplate
-
-section {
-	margin-top: 20px;
-	padding-top: 20px;
-}
-section.section-break {
-	margin-top: 60px;
-	padding-top: 100px;
-}
-.storytitle {
-	padding-bottom: 20px;
-	text-align: center;
-}
-.storytitle h1 {
-	text-transform: uppercase;
-	margin-bottom:0px;
-}
-p.lead {
-	font-size:24px;
-	line-height:36px;
-}
-blockquote.strong-quote {
-	padding:0;
-	margin:0;
-	border:none;
-	margin-top:30px;
-	margin-bottom:30px;
-}
-blockquote.strong-quote p{
-	font-size:30px;
-	line-height:38px;
-	font-weight: bold;
-}
-.my-background-example {
-	padding: 20px;
-	background-image: url(http://farm9.staticflickr.com/8501/8316081118_da9eb027f8_o.jpg);
-	background-repeat: no-repeat;
-	background-size:cover;
-	-webkit-border-radius: 6px;
-	   -moz-border-radius: 6px;
-	        border-radius: 6px;
-}
-.carousel-caption {
-	position: static;
+@font-face {
+	font-family: Lato src: url('Lato.ttf');
 }
 
-end boilerplate*/
+@font-face {
+	font-family: Hattori Hanzo src: url('Hattori Hanzo.ttf');
+}
+
+@font-face {
+	font-family: Impact Label src: url('Impact Label.ttf');
+}
+
+/*Photos and Videos*/
+
+video {
+	float: right;
+}
+
+.img-polaroid {
+	width: 550px;
+	height: 350px;
+	margin-left: 50px;
+}
+
+
+ figcaption {
+    /*display: none;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    background-color: rgba(0,0,0,.15);
+    text-align: center;
+}
+
+figure:hover img {
+    opacity: .7;
+    transition: 0.7s all;
+    -webkit-transition: 0.7s all;
+}
+
+figure:hover figcaption {
+    display: block;
+}
+*/
+}
+
+figure.img-float-left {
+	float:left;
+	width:30%;
+	display: block;
+}
+
+figure.img-float-right {
+	float:right;
+	width:40%;
+	display: block;
+}
+
+
+/* ---END PHOTO/VIDEO SECTION --*/
 
 
 body {
 	margin: 0 auto;
-}
-
-
-.ia {
-	text-align: center;
+	color: #000000;
 }
 
 .container {
 	padding-top: 50px;
 }
 
-.paralax {
-	background: url(../img/wood.JPG);
+#roster.container {
+	padding-bottom: 15%;
+	padding-right: 4%;
+}
+
+.span12 {
+	padding-bottom: 5%;
+}
+
+.span6 {
+	padding-left: 15%;
+}
+
+.span2 {
+	padding-top: 1%;
+	font-family: contra;
+}
+
+.span3 {
+	padding-top:5%;
+
+}
+
+.span3#lakefront-list {
+	position: relative;
+	right: 80px;
+	padding-top: 1%;
+}
+
+.span3#miller-list {
+	position: relative;
+	right: 89px;
+	padding-top: 1%;
+}
+
+.span3#mkb-list {
+	position: relative;
+	padding-top: 1%;
+	right: 32px;
+}
+
+.span3#temperance-list {
+	position: relative;
+	right: 92px;
+	padding-top: 1%;
+}
+
+.span3#polly-list {
+	position: relative;
+	right: 27px;
+	padding-top: 1%;
+}
+
+
+
+.title-image {
+	background: url(../img/titlepage3.jpeg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;	
 	background-size:cover;
@@ -88,135 +151,144 @@ body {
 	overflow: hidden;
 }
 
-img.crafthed {
-	position: absolute;
-	right: 10px;
-	top: 200px;
-	height: 2000px;
-	width: 2000px;
-	text-shadow:0px 2px 1px #333333;
-	margin: 0 auto;
-
+.intro-text {
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 5%;
+	position:relative;
+	top: 340px;
 }
 
 p {
-	font-size: 1.2em;
-	font-family: Fanwood, sans-serif;
+	font-size: 1.4em;
+	font-family: contra;
 	line-height: 30px;
+	color: #252725;
+}
+
+p.nicknames {
+	font-family: hattori hanzo;
+	color: white;
+}
+
+blockquote p{
+	font-size:30px;
+	line-height:38px;
+	border:none;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+h1 {
+	font-family: 'Hattori Hanzo';
+	font-size: 110px;
+}
+
+
+h2 {
+	font-family: Contra;
+	padding-left: 5px;
+	text-shadow: 0px 2px 3px #555;
+}
+
+h2.nicknames {
+	font-size: 85px;
+	position: absolute;
+}
+
+h2.modal-head {
+	font-family: 'Impact Label';
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font-family: Contra;
+	color: white;
+	text-align: center;
+	font-size: 5.5em;
+	padding: 3% 0 0 0;
+	font-weight: 600;
+}
+
+
+h3.nicknames {
+	font-size: 25px;
+	font-family: Contra;
+	font-weight: 800;
+	color: #fafbff;
+	text-align: left
+}
+
+h4 {
+	font-family: Lato;
+	font-size: 40px;
+	color: white;
+	padding-left: 5%;
+	font-weight: 200;
 }
 
 a {
 	color: white;
-	text-shadow: 0px 2px 3px #555;
+	text-shadow: 0px 3px 3px #000000;
+	
 }
 
 a:hover {
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
 
-div.double-lines {
+.double-lines {
 	width: 50%;
 	margin-left: 25%;
 }
-	
 
-span {
-	font-size: 2.5em;
-	line-height: 1em;
-	color: #fff;
-	text-shadow: 0px 4px 3px #555;
+
+img.logo {
+	padding-left: 450px;
+	padding-bottom: 50px;
 }
 
+#vert-line {
+	color: #5c5b5c;
 
-.span6 {
-	width:300px;
-	display:block;
-	font-family: garamond;
 }
 
-p.span6 {
-	width: 100%;
-}
-
-div.span12 {
-	padding-top: 5%;
-	padding-bottom: 10%;
-}
-
-.lead {
-	font-size: 1.9em;
-}
-
-p.lead {
-	line-height: 40px;
-}
-
-h2, h3 {
-font-family: Fanwood, sans-serif;
-}
-
-
-
-/* Beer mug likely to be deleted
-.beermug {
-	text-align: center;
-	-webkit-transition: 1.5s all;
-	-moz-transition: 1.5s all;
-	transition: 1.5s all;
-	padding-bottom: 450px;
-}
-
-.beermug:hover {
-	-webkit-transform:rotate(-57.5deg);
-	-moz-transform: rotate(-57.5deg);
-	transform:rotate(-57.5deg);
-}
-*/
-
-.decorations {
-	text-align: center;
-	padding-bottom: 5%;
-	margin: 0 auto;
-}
-
-.decorations p {
-	margin-left: 65px;
-	font-style: it
-}
-
-h3.meet {
-	text-align: center;
-	padding: 50px 0 50px 0;
-	font-size: 100px;
+#myTimeline {
+	width: 1200px;
+	overflow-y: hidden;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
 }
 
 #row1 {
 	margin: 0 auto;
-	padding-bottom: 10%;
+	background: #3B3F46;
+	padding-bottom: 15%;
+	padding-left: 2%;
 }
 
 
 .img-circle {
 	opacity: .75;
-	transition: 0.7s all;
-	-moz-transition: 0.7s all;
-  	-webkit-transition: 0.7s all;
+	transition: 0.5s all;
+	-moz-transition: 0.5s all;
+  	-webkit-transition: 0.5s all;
+  	border: 4px solid #dedbdb;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 .img-circle:hover {
 	opacity: 1;
-	transform: rotate(7.6deg);
-	-webkit-transform: rotate(7.6deg);
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
 }
 
-.small {
-	padding-top: 10px;
-}
 
-img.img-circle {
-/*put transitions here*/
-}
 
 
 /*LAKEFRONT*/
@@ -224,45 +296,35 @@ img.img-circle {
 #lakefront {
 	background: url(../img/russ.png) no-repeat;
 	position:relative;
-	padding: 200px 200px;
 	background-attachment: fixed;	
 	background-size:cover;
 	overflow: hidden;
+	margin-top:-10%;
+	width:auto;
 
 }
 
 .info-l {
-    background:rgba(160,96,0,.7);
+    background:rgba(11,11,70,.8);
     position: absolute;
-    text-align: center;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+    width: 65%;
+    left: 60px;
+    bottom: 150px;
     padding: 2%;
+    border-top: 4px solid #dad0d0;
+    border-bottom: 4px solid #dad0d0;
+    border-right: 4px solid #dad0d0;
 }
 
-.info-l h1 {
-	font-family: tiza;
-	font-size: 30px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
 
-.info-l h3 {
-	font-family: tiza;
-	font-size: 20px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-div#lakefront.row {
-	padding:20%;
+#lakefront.row {
+	padding:24%;
 }
 
 /*MILLERCOORS*/
 
 #millerCoors {
-	background: url(../img/jeff.png) no-repeat;
+	background: url(../img/tap.jpg) no-repeat;
 	position:relative;
 	padding: 200px 200px;
 	background-attachment: fixed;	
@@ -271,32 +333,20 @@ div#lakefront.row {
 }
 
 .info-mc {
-    background:rgba(160,96,0,.7);
+    background:rgba(218,165,32,.8);
     position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    width: 65%;
+    bottom: 150px;
+    left: 60px;
     padding: 2%;
-    text-align: center;
-
+    border-top: 4px solid #dad0d0;
+    border-bottom: 4px solid #dad0d0;
+    border-right: 4px solid #dad0d0;
  }
 
-.info-mc h1 {
-    font-family: tiza;
-	font-size: 30px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
 
-.info-mc h3 {
-    font-family: tiza;
-	font-size: 20px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-div#millerCoors.row {
-	padding:25%;
+#millerCoors.row {
+	padding:24.5%;
 }
 
 /* MILWAUKEE */
@@ -312,31 +362,19 @@ div#millerCoors.row {
 
 
 .info-mk {
-    background:rgba(35,5,68,0.8);
+    background:rgba(0,0,0,.8);
     position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    text-align: center;
+    width: 65%;
+    left: 60px;
+    bottom: 150px;
     padding: 3%;
+    border-top: 4px solid #dad0d0;
+    border-bottom: 4px solid #dad0d0;
+    border-right: 4px solid #dad0d0;
 }
 
-div#mkb.row {
+#mkb.row {
 	padding:25%;
-}
-
-.info-mk h1 {
-	font-family: tiza;
-	font-size: 30px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-.info-mk h3 {
-	font-family: tiza;
-	font-size: 20px;
-	color: #C9C1B4;
-	text-shadow: 0px 2px 3px #555;
 }
 
 /*TEMPERANCE*/
@@ -352,86 +390,103 @@ div#mkb.row {
 
 
 .info-t {
-    background:rgba(53,2,66,0.8);
+    background:rgba(53,2,66,.8);
     position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+    width: 65%;
+    left: 60px;
+    bottom: 150px;
     padding: 3%;
-    text-align: center;
+    border-top: 4px solid #dad0d0;
+    border-bottom: 4px solid #dad0d0;
+    border-right: 4px solid #dad0d0;
 }
 
-div#temperance.row {
+#temperance.row {
 	padding:25%;
 }
 
-.info-t h1 {
-	font-family: tiza;
-	font-size: 30px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-.info-t h3 {
-	font-family: tiza;
-	font-size: 20px;
-	color: #C9C1B4;
-	text-shadow: 0px 2px 3px #555;
-}
 
 /* POLLYANNA */
 
 #pollyanna {
-	background: url(../img/brian.png) no-repeat;
+	background: url(../img/Brian-Graduation.jpg) no-repeat;
 	position:relative;
 	padding: 200px 200px;
 	background-attachment: fixed;	
 	background-size:cover;
 	overflow: hidden;
+
 }
 
 .info-p {
-    background:rgba(180,5,0,.7);
+    background:rgba(140,5,0,.8);
     position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+    width: 65%;
+    left: 60px;
+    bottom: 150px;
     padding: 3%;
-    text-align: center;
+    border-top: 4px solid #dad0d0;
+    border-bottom: 4px solid #dad0d0;
+    border-right: 4px solid #dad0d0;
 }
 
-.info-p h1 {
-	font-family: tiza;
-	font-size: 30px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-.info-p h3 {
-	font-family: tiza;
-	font-size: 20px;
-	color: #222;
-	text-shadow: 0px 2px 3px #555;
-}
-
-div#pollyanna.row {
+#pollyanna.row {
 	padding:25%;
+
 }
+
+/*----------------------End of Stories-------------------*/
 
 .fa-arrow-up {
   	position: fixed;
   	bottom: 15px;
   	right: 0;
-  	border: 5px solid black;
   	font-size: 50px;
-  	color: #222;
+  	color: #e7dee3;
   	z-index: 1;
 }
  .fa-arrow-up:hover {
  	color: #768585;
  }
 
-    
 ul {
-list-style-type: none;
+	list-style-type: none;
+	font-family: contra;
+}
+
+.modal-sidebar {
+	
+	width: 400px;
+	height: auto;
+	margin: 0 0 3% 3%;
+	text-align: center;
+	font-family: 'Impact Label';
+	background:rgba(140,5,0,.5);
+	float:right;
+	border: 3px solid #c6c9cc;	
+}
+
+p.modal-graph {
+	font-family: 'Hattori Hanzo';
+	padding: 1%;
+}
+
+.tap {
+	position: relative;
+}
+
+.coors-tab {
+	position: absolute;
+	bottom: 10px;
+	left: 91px;
+
+	
+}
+
+.coors-tab:active { 
+	-webkit-transform: skew(3deg); 
+	transform: skew(3deg);
+	-webkit-transform-origin: 0 90%;
+	transform-origin: 0 90%;
+	
 }

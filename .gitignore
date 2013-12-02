@@ -1,0 +1,12 @@
+# OS generated files #
+######################
+img/.DS_Store
+beer/.DS_Store
+js/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

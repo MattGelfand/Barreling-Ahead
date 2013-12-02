@@ -9,12 +9,20 @@
 		
 		<!-- Your styles go here -->
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jqtimeline.css" />
+
 	</head>
 	
 		<!--Snap Scroll-->
 		<body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
-	
-		<!-- CLASS WEBSITE NAVBAR -->
+
+		<!--Google Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
+
+
+
+
+		<!--CLASS WEBSITE NAVBAR-->
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
@@ -40,17 +48,10 @@
 		<!-- END CLASS WEBSITE NAVBAR -->
 	
 	<div class="row">
-			<div class="paralax">
-				<img class="crafthed" src="img/crafthed.png">
+			<div class="title-image">
+				<h1 class="title">The<br />State<br />of<br />Craft</h1>
+				<p class="intro-text"><strong>America is drunk on craft beer.</strong> And as a result, any would-be brewmaster with an ounce of ambition and a bushel of hops can enter the industry for less than a typical week's salary. Five midwestern brewers at disparate stages of their careers weigh in on the country's growing libatation infatuation.</p>
 			</div>
-	</div><!--end row-->
-	
-
-	<!--<div class="row" id="bottlecap">
-		<div class="bottlecap">
-			<img class="bottlecap" src="img/bottlecap.gif">
-				<p class="dek-head"><span>AMERICA IS DRUNK ON CRAFT BEER.</span><br />AND AS A RESULT, ANY WOULD-BE BREWMASTER WITH AN OUNCE OF AMBITION AND A BUSHEL OF HOPS CAN ENTER THE INDSUTRY FOR LESS THAN A WEEK'S SALARY. FIVE MIDWESTERN BREWERS AT DISPARATE STAGES OF THEIR CAREERS WEIGH IN ON THE COUNTRY'S GROWING <span class="dek-end">LIBATION INFATUATION.</span></p>
-		</div>
 	</div><!--end row-->
 
 	<div class="row">
@@ -58,188 +59,298 @@
 			<img class="barrel" src="img/barrel-break1.png">
 	</div><!--end row-->
 	
-	<p class="ia">(interactivity here)</p>
 	<div class="container">
-		<div class="row" id="intro-graf">
+		<div class="row">
 			<div class="span12">
 				<p class="lead">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in malesuada dui. Mauris nec luctus arcu. Aliquam semper scelerisque risus, vel imperdiet nulla gravida non. Quisque hendrerit libero nec nisl commodo imperdiet. Vestibulum luctus varius dapibus. Donec dignissim, urna sed tristique vestibulum, est ante pharetra libero, ac egestas eros enim a odio. Fusce neque libero, elementum eu risus nec, sagittis pulvinar sapien. Fusce a tempus risus, vitae aliquet neque.
+					Morbi urna enim, ultricies ut arcu et, molestie bibendum erat. Aenean ut nisi massa. Nulla bibendum, ante eu condimentum feugiat, velit augue pulvinar lacus, ut semper nisl diam ac erat. Etiam ligula nunc, laoreet vel est nec, viverra euismod ipsum.
+				</p>
+				
+				<div id="myTimeline"></div>	
+
+
+				<p class="intro-p">
+					Morbi urna enim, ultricies ut arcu et, molestie bibendum erat. Aenean ut nisi massa. Nulla bibendum, ante eu condimentum feugiat, velit augue pulvinar lacus, ut semper nisl diam ac erat. Etiam ligula nunc, laoreet vel est nec, viverra euismod ipsum. 
+				<p class="intro-p">
+					Pellentesque nec nisl quis magna tempus vehicula vel dictum nisl. Mauris imperdiet justo sed tempor bibendum. Nulla facilisi. Cras quis euismod velit. In euismod ut nunc ac aliquam. Integer auctor laoreet dolor, eget pharetra nulla faucibus vitae. Cras quis risus luctus, pharetra tellus rutrum, ultricies dui.
 				</p>
 
-				<p>
-					Morbi urna enim, ultricies ut arcu et, molestie bibendum erat. Aenean ut nisi massa. Nulla bibendum, ante eu condimentum feugiat, velit augue pulvinar lacus, ut semper nisl diam ac erat. Etiam ligula nunc, laoreet vel est nec, viverra euismod ipsum. Pellentesque nec nisl quis magna tempus vehicula vel dictum nisl. Mauris imperdiet justo sed tempor bibendum. Nulla facilisi. Cras quis euismod velit. In euismod ut nunc ac aliquam. Integer auctor laoreet dolor, eget pharetra nulla faucibus vitae. Cras quis risus luctus, pharetra tellus rutrum, ultricies dui.
-				</p>
-
-				<p>
+				<p class="intro-p">
 					Suspendisse eget pulvinar nunc. Integer a nibh nulla. Sed sit amet nisi bibendum, adipiscing quam eu, scelerisque dui. Duis auctor dapibus turpis eget eleifend. Maecenas porta eget lacus sed tincidunt. Cras ut adipiscing felis. Suspendisse mi sapien, viverra vitae massa eu, semper dignissim sem.
 				</p>
-		</div><!--end intro graf-->
-	</div>
-
-
-		<div class="pioneers">
-			<div class="span12">
-				<h3 class="meet">The Craftsmen</h3>
 			</div>
-		</div><!--end pioneers-->
-	
+		</div>
+	</div>
+		
 
-
+		
 	<div class="row" id="row1">
-		<div class="span2 offset1"> 
+		<h3>- The Craftsmen -</h3>
+		<div class="span3"> 
 			<div class="person">
-				<img class="img-circle" src="#" width="100px">
-				<h2>
-					Russ<br/>
-				<small>"The TBD Guy"</small>
-				</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in malesuada dui. Mauris nec luctus arcu. Aliquam semper scelerisque risus, vel imperdiet nulla gravida non. Quisque hendrerit libero nec nisl commodo imperdiet.</p>
-					<p><a class="btn btn-default" href="#russ" onclick="jumpTo('#lakefront')" role="button">View More</a></p>
+				<img class="img-circle" src="img/russ-mug.png" width="100px">
+					<h3 class="nicknames">"The Veteran"<br/></h3>
+					<p class="nicknames">Twenty-five years ago, a chemical engineer concocted a brew that would return the title of Brew City to Milwaukee. Now you can find Lakefront Brewery in 38 states and five countries.</p>
+					<p><a class="btn btn-danger" href="#russ" onclick="jumpTo('#lakefront')" role="button">View More</a></p>
 			</div>
 		</div>
 
-		<div class="span2">
+		<div class="span3">
 			<div class="person"> 
 				<img class="img-circle" src="#" width="100px">
-				<h2>
-				Jeff <br />
-				<small class="dippity">"The Behemoth"</small>
-				</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in malesuada dui. Mauris nec luctus arcu. Aliquam semper scelerisque risus, vel imperdiet nulla gravida non. Quisque hendrerit libero nec nisl commodo imperdiet.</p>
-					<p><a class="btn btn-default" href="#jeff" onclick="jumpTo('#millerCoors')" role="button">View More</a></p>
+				<h3 class="nicknames">"The Goliath"<br /></h3>
+					<p class="nicknames">Blue Moon, Crispin, Leinenkugel’s Summer Shandy. Three of the highest selling alcoholic beverages in the United States frame themselves as craft drinks. Are they? MillerCoors finds themselves in the middle of a craft beer barfight.</p>
+					<p><a class="btn btn-danger" href="#jeff" onclick="jumpTo('#millerCoors')" role="button">View More</a></p>
 			</div>
 		</div>
 		
 
-		<div class="span2">
+		<div class="span3">
 			<div class="person"> 
 				<img class="img-circle" src="#" width="100px">
-				<h2>
-				Jim <br />
-				<small class="dippity">"The Locavore"</small>
-				</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in malesuada dui. Mauris nec luctus arcu. Aliquam semper scelerisque risus, vel imperdiet nulla gravida non. Quisque hendrerit libero nec nisl commodo imperdiet.</p>
-					<p><a class="btn btn-default" href="#jim" onclick="jumpTo('#mkb')" role="button">View More</a></p>
+				<h3 class="nicknames">"The Locavore"<br /></h3>
+					<p class="nicknames">Milwaukee Brewing Company doubled down on the town that gave them their name. On the back of homebrewed success, 2014 will see Milwaukee Brewing Company expand into three new states.</p>
+					<p><a class="btn btn-danger" href="#jim" onclick="jumpTo('#mkb')" role="button">View More</a></p>
 			</div>
 		</div>
 
-		<div class="span2">
+		<div class="span3">
 			<div class="person"> 
-				<img class="img-circle" src="#" width="100px">
-				<h2>
-				Josh <br />
-				<small class="dippity">"The Upstart"</small>
-				</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in malesuada dui. Mauris nec luctus arcu. Aliquam semper scelerisque risus, vel imperdiet nulla gravida non. Quisque hendrerit libero nec nisl commodo imperdiet.</p>
-					<p><a class="btn btn-default" href="#josh" onclick="jumpTo('#temperance')"role="button">View More</a></p>
+				<img class="img-circle" src="img/gilbert-mug.png" width="100px">
+				<h3 class="nicknames">"The Upstart" <br /></h3>
+					<p class="nicknames">Architect turned brewer. American dream or American psycho? Can the newcomer make it work in a country drowning in new beer?</p>
+					<p><a class="btn btn-danger" href="#josh" onclick="jumpTo('#temperance')"role="button">View More</a></p>
 			</div>
 		</div>
 				
-		<div class="span2"> 
+		<div class="span3"> 
 			<div class="person" id="brian">
-				<img class="img-circle" src="#" width="100px">
-				<h2>
-				Brian <br />
-				<small class="dipptiy">The Dreamer"</small>
-				</h2>	
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in malesuada dui. Mauris nec luctus arcu. Aliquam semper scelerisque risus, vel imperdiet nulla gravida non. Quisque hendrerit libero nec nisl commodo imperdiet.</p>
-					<p><a class="btn btn-default" href="#brian" onclick="jumpTo('#pollyanna')"role="button">View More</a></p>
+				<img class="img-circle" src="img/Brian-Solo1.png" width="100px">
+				<h3 class="nicknames">"The New Guy" <br /></h3>	
+					<p class="nicknames">He quit his day job to follow his passion, and the recent Siebel Institute graduate's newly minted brewery looks to corner Chicago's south suburban market - but will that be enough to warrant his decision?</p>
+					<p><a class="btn btn-danger" href="#brian" onclick="jumpTo('#pollyanna')" role="button">View More</a></p>
 			</div>
 		</div>
 	</div><!--end first row-->
-	</div><!--end container-->
+
+
 
 
 <!--================================================Stories============================================================-->
 
 <!--Back to Top Button-->
-<a href="#row1" onclick="jumpTo('.pioneers')"><i class="fa fa-arrow-up"></i></a>
+<a href="#row1" onclick="jumpTo('.btn btn-danger')"><i class="fa fa-arrow-up"></i></a>
 
 
-<div class="row" id="lakefront">
-		<div class="span12">
-			<div class="info-l">
-				<h1><a id="russ">RUSS KLITSCH</a></h1>
-				<h3>LAKEFRONT BREWERY / MILWAUKEE, WISCONSIN</h3>
-			</div>
+	<div class="row" id="lakefront">
+		<div class="info-l">
+			<h1><a id="russ">Russ Klitsch</a></h1>
+			<h4>Lakefront Brewery, Milwaukee, Wisconsin</h4>
 		</div>
-	</div>	
+	</div>
 		
 	<div class="container">
 		<div class="row">
+			<img class="logo" src="img/lakefront-logo.png">
 			<div class="span12">
-			
-				<figure class="decorations">
-					<img src="img/decorations.png">
-						<p>“VITALS”</p>
-				</figure>
-
-				<p>Nunc varius arcu eros, et iaculis augue tincidunt ut. In ac ultricies leo, eget pellentesque lectus. Mauris pulvinar feugiat dolor, quis posuere libero hendrerit in. Sed vitae tortor sed velit faucibus faucibus. Duis facilisis et elit vitae iaculis. Sed nec quam porttitor, scelerisque orci eget, lacinia orci. Nulla egestas pellentesque facilisis. Sed tristique nisl ante, non ultricies elit facilisis quis. Fusce molestie neque non feugiat ultricies.</p>
-			
-				<p>Sed sed lorem sit amet nunc accumsan gravida ac quis velit. Aliquam ullamcorper urna dolor, at convallis tortor commodo eget. Vestibulum aliquet, ipsum at bibendum varius, libero nulla ultrices dolor, quis blandit neque ante sed neque. Maecenas feugiat vulputate convallis. Praesent commodo placerat ante, ut elementum erat lobortis vitae. Nullam venenatis sem in nibh vulputate, non ornare leo dapibus. Etiam et justo sit amet nunc rutrum posuere a eu nisl. Sed nec magna mattis, pulvinar metus sed, aliquet nisi. Ut pharetra dui lacinia turpis tristique, sed vestibulum ligula vulputate. Nullam fermentum tortor mi, sed feugiat mi tincidunt at. Vivamus euismod mollis lobortis.<p>
-									
-				<p>Integer interdum a quam nec varius. Praesent iaculis tincidunt lacinia. Suspendisse cursus congue eros, eget vulputate dui gravida sed. Duis augue ligula, tincidunt vel mauris quis, gravida bibendum lectus. Nulla ante sapien, rutrum in augue in.</p>
+					<div class="span6">
+					<h2 class="nicknames">The Veteran<span id="vert-line"> |</span></h2></div>
+					<div class="span3" id="lakefront-list">
+						<ul>
+							<li>Opened: <strong>1933</strong></l1>
+							<li>Locations: <strong>38 States</strong></l1>
+							<li>Barrels: <strong>33,000/yr</strong></li>
+							<li>Best-seller: <strong>Fixed Gear</strong></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div><!--end second row-->
+		
+		<div class="span12">
+				<p>Russ Klisch and his brother Jim started Lakefront Brewery in 1987 when the homebrew they call Riverwest Stein – named for the neighborhood they lived in at the time – was good enough to sell.</p>
  
+				<p>That year, they sold one barrel. They started in December, and they literally rolled the barrel from their bakery-turned-brewery on Chambers Street to Gordon Park Pub down the street.</p>
+ 
+				<p>“No one really had any money and there really wasn’t good equipment being made,” Klisch, the co-owner and co-founder of Lakefront Brewery in Milwaukee,  says. The lack of professional grade equipment meant brewers weren’t making the best beer they could. It resulted in one of two things: beer with preservatives and additives or beer that couldn’t travel far due to spoilage.</p>
+ 
+				<p>Traveling far was something Lakefront’s beer did not do at first. It took 10 years for Lakefront Brewery to get to an annual output of 3,000 barrels. Today, Lakefront Brewery produces more than 33,000 barrels, is available in 38 states, is delivered by trucks, and is bursting at the seams in the converted power plant they’re currently brewing in.</p>
+ 
+				<p>“Well, we’re barely keeping up,” Josh Barto, a brewery navigation specialist (aka, tour guide) at Lakefront Brewery, says with a laugh. “There’s no more room to shove any more tanks. We’re trying to get equipment that will make us more efficient, but just capacity-wise, we’re pretty maxed out at this location.” Lakefront is currently in the process of expanding. The brewery has optioned a plot in the Menomonee Valley, about two miles from the current facility. Assuming the plans come to fruition, Lakefront Brewery will have the space to increase production by more than 300 percent.</p>
+ 
+				<p>“I feel we’re going to continue to grow,” Klisch says. “We’ll be over 100,000 to 200,000 barrels in production in the next 10 years.”</p>
+ 
+				<p>Production at those levels would put Lakefront within keg-rolling distance of being in the top 10 craft breweries in the country for barrel output. But how does a brewery even get to 100,000 or 200,000 barrels?</p>
 
+				<p>Keeping a finger on the pulse of flavors is a big part of Lakefront’s game, and also the brewery’s economic ace. “It’s pretty hard, when you get people’s palates educated, for them to say all of a sudden ‘well I want something bland,’” Klisch says.</p>
+ 
+				<p>Lakefront’s Organic ESB Ale is the oldest certified organic beer in the country. Their Wisconsinite is an all-Wisconsin sourced Weiss with the only native brewing yeast from Wisconsin. It was the first brewery to bottle fruit beer since prohibition in 1992 with their cherry lager. Lakefront also saw sales spike following the introduction of New Grist, the United State’s first certified gluten-free beer, and they are the rare craft brewery that specializes in lagers. Their Pumpkin Lager is the only commercially available pumpkin lager in the world – all other pumpkin beers are ales, meaning they were fermented at a higher temperature.</p>
+
+				<p>What’s the next move? “It’s going to be a very flavorful, low-alcohol beer,” Klisch says. “Session style. Big flavor.”</p>
+ 
+				<p>Sessionable beers are beers that drinkers can drink throughout the day. Part of the reason macro brews still sell so well is that they’re great for drinking during events – times when you want to drink more than two or three beers. Craft beers, on the other hand, can leave drinkers feeling weighed down, and their high alcohol content can make a mess of daylong events. Making a sessionable beer on par with the best IPAs is a logical response to a consumer problem. You know, like most innovation. “One of the more valid complaints people who drink craft have are that they like it, but they can only drink about two,” Klisch says. “They really want to drink more, but they don’t want any more alcohol.”</p>
+ 
+				<p>Would-be brewers can definitely succeed and they’d be doing themselves a disservice if they had a new idea and didn’t at least try.</p>
+ 
+				<p>New brewers expectations have to be realistic, though. Immediate success isn’t guaranteed and they’re not likely to be the next craft beer billionaire. “You’re running a marathon, not a sprint,” Klisch says. “Unfortunately, what we have right now is so many people getting into [brewing] and they think they’re going to be at 10,000 barrels in a couple years. It took us almost 20 years to get to 10,000 barrels.”</p>
+ 
+				<p>By Klisch’s estimation, the American market can handle somewhere around 10,000 breweries – over three-times the amount of breweries currently operating – assuming the model for craft brewers doesn’t change drastically. “I think that’s a reasonable possibility if those breweries look like some of the new entrants we’re seeing today,” Dr. Bart Watson, staff economist at the Brewers Association, says. “One of the things that’s amazing about the craft brewing industry is that people are always innovating both on beer and business models. And so five years from now, the entrants may look completely different from the entrants we’re seeing today, which makes forecasting a little bit more difficult when you’re thinking about how many total breweries there are going to be in a market.”</p>
+ 
+				<p>Klisch even has an open offer for young folks interested in starting their own brewery. It’s an incredible offer, albeit one that requires certain experience in bending the space-time continuum. “I’ll trade you my brewery for free if you can give me your age,” Klisch says. “You can have my brewery, but I get to be 20-something-years-old again. Anybody want to take me up on it? If that could ever happen, I’d be more than happy because I could do it again if I got back into it.”</p>
+
+		</div>
 	</div><!--end container-->
-		<div class="row" id="millerCoors">
-			<div class="info-mc">
-				<h1><a id="Jeff">JEFF KOOPERMIENERS</a></h1>
-				<h3>MillerCoors Brewing / Milwaukee, Wisconsin</h3>
-			</div>
+ 
+	<div class="row" id="millerCoors">
+		<div class="info-mc">
+			<h1><a id="Jeff">Jeff Koopmeiners</a></h1>
+			<h4>MillerCoors Brewing / Milwaukee, Wisconsin</h4>
+		</div>
 	</div>
 
-		<div class="container">
+	<div class="container">
 		<div class="row">
+			<img class="logo" src="img/millercoors-logo.png">
 			<div class="span12">
-
-				<figure class="decorations">
-					<img src="img/decorations.png">
-						<p>“You’re running a marathon, not a sprint.”</p>
-				</figure>
-
-
-			<p>Nunc varius arcu eros, et iaculis augue tincidunt ut. In ac ultricies leo, eget pellentesque lectus. Mauris pulvinar feugiat dolor, quis posuere libero hendrerit in. Sed vitae tortor sed velit faucibus faucibus. Duis facilisis et elit vitae iaculis. Sed nec quam porttitor, scelerisque orci eget, lacinia orci. Nulla egestas pellentesque facilisis. Sed tristique nisl ante, non ultricies elit facilisis quis. Fusce molestie neque non feugiat ultricies.</p>
-			
-			<p>Sed sed lorem sit amet nunc accumsan gravida ac quis velit. Aliquam ullamcorper urna dolor, at convallis tortor commodo eget. Vestibulum aliquet, ipsum at bibendum varius, libero nulla ultrices dolor, quis blandit neque ante sed neque. Maecenas feugiat vulputate convallis. Praesent commodo placerat ante, ut elementum erat lobortis vitae. Nullam venenatis sem in nibh vulputate, non ornare leo dapibus. Etiam et justo sit amet nunc rutrum posuere a eu nisl. Sed nec magna mattis, pulvinar metus sed, aliquet nisi. Ut pharetra dui lacinia turpis tristique, sed vestibulum ligula vulputate. Nullam fermentum tortor mi, sed feugiat mi tincidunt at. Vivamus euismod mollis lobortis.<p>
-									
-			<p>Integer interdum a quam nec varius. Praesent iaculis tincidunt lacinia. Suspendisse cursus congue eros, eget vulputate dui gravida sed. Duis augue ligula, tincidunt vel mauris quis, gravida bibendum lectus. Nulla ante sapien, rutrum in augue in.</p>
-
+					<div class="span6">
+					<h2 class="nicknames">The Goliath <span id="vert-line">|</span></h2>
+				</div>
+					<div class="span3" id="miller-list">
+						<ul>
+							<li>Opened: <strong>1933</strong></l1>
+							<li>Locations: <strong>38 States</strong></l1>
+							<li>Barrels: <strong>33,000/yr</strong></li>
+							<li>Best-seller: <strong>Fixed Gear</strong></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div><!--end third row-->
+
+		<div class="span12">
+			<p>Miller Lite. Savior of a brewing behemoth, staple of stadiums, tailgates and college parties nationwide. Its popularity is surpassed only by it’s consistency, even if the taste hasn’t helped the perception of American beers worldwide. Within the last decade, however, a young, growing group of drinkers are demanding high quality, handcrafted brews and forced MillerCoors to follow demand, but can a corporate giant genuinely exist in the craft beer market?</p>
  
+			<p>Craft beer is booming, but was still just 6.5 percent of the American beer market last year. The craft beer share grew 12 percent to get there, however and the writing’s on the wall: craft beer isn’t just a trend. At the same time, mass produced, domestic beer is declining – MillerCoors’ domestic sales have fallen by an average of 2.9 and 4.85 percent, respectively, in the previous two quarters – but it’s not going anywhere fast. MillerCoors, including Tenth and Blake, owned 29 percent of the total American beer market in 2012. The big boys remain safely at the top of the industry.</p>
 
-	
+			<figure class="img-float-right">
+				<img src="img/millerCoors.jpg">
+					<figcaption>
+						<p>Should the craft community welcome these guys?</p>
+					</figcaption>
+			</figure> 
+ 
+			<p>MillerCoors opened their craft and import division, Tenth and Blake, in 2010. The division allows the international giant to sink their teeth into all those “fancy beer” dollars, producing brands like Blue Moon and busily acquiring regional brands like Leinenkugel’s. Tenth and Blake currently owns and manages 13 brands. “They have to get to a certain size before we buy it,” Jeff Koopmeiners, manager of strategy and projects at Tenth and Blake, says.</p>
+ 
+			<p>There isn’t a steadfast line that puts a brewery on Tenth and Blake’s acquisition radar, but once a craft brewer comes into the fold, the transition is often the most important part. “It’s important for us to keep leadership in place,” Koopmeiners says.</p>
+ 
+			<p>Empires have been built on the personalities of brewery founders. When Anheuser-Busch InBev purchased Goose Island, the beer didn’t change. The perception of the beer did. “I think people want to know where their beer’s coming from,” Brian Pawola, brewer and co-partner at Pollyanna Brewing Company, says. “I think it’s kind of similar to food where they don’t want to buy something that they think is gourmet and then realize it was made in a Wal-Mart kind of facility.”<p>
+ 
+			<p>Drinkers automatically assumed that once the brewery went under the control of AB InBev, the quality would be compromised. Under the AB InBev umbrella, Goose Island has gone on to sell more beer than it ever has. He vocal minority still believes the craft is gone, but nationwide distribution has launched the Goose Island brand to new levels. Keeping both the organizational structure and the face of the company is integral for the success of an acquisition. The advantage of being bought out, for the purchased brewery, comes from lowered packaging costs as well as reduced transportation and distribution costs.</p>
+ 
+			<p>“The craft beer brewers have done a good job creating the perception that what they’re doing is not a business,” Koopmeiners says. “The craft thing started as a fair way to describe what was going on. Now? Craft means nothing anymore.”</p>
+ 
+			<p>When a brewer gets to the size of MillerCoors, the argument is usually that the company loses its ability to innovate and respond with agility to market fluctuations. Pete Crowley, owner of Haymarket Brewpub in Chicago, takes issue with Tenth and Blake’s perception as a craft brewer. “If I made enough so that everyone in this country that wanted it could get it, it loses its mystique, it loses its craft, its art,” he says. “Now it’s just a mass-produced thing.”</p>
+
+			<blockquote class="pull-right"><p>"I had no idea beer could actually be...good"<p>
+				<small>Pati Vitt, patron at World of Beer, Evanston, IL</small>
+			</blockquote>
 			
+			<video class="img-polaroid" width="800px" height="450px" controls poster="img/miller1.jpg">
+    		<source src="img/PatiVitt-1.mp4" type="video/mp4" />
+   			<source src="img/PatiVitt-1.ogv" type="video/ogg" />
+    		<source src="img/PatiVitt-1.webm" type="video/webm" />
+			</video>
+ 
+			<p>Craft beer itself is defined by the Brewers Association as small (annual production under 6 million barrels), independent (less than 25 percent of the brewery is owned by one of the brewing giants. Private equity and outside investment still count as craft.), and traditional (the brewery’s flagship beer must be all-malt or, according to the Brewers Association, “has at least 50 percent of it’s volume in either all-malt beer or in beers which use adjuncts to enhance rather than lighten flavor”). Small and regional brewers are more worried about that mass-produced product masquerading as something that’s handcrafted and from a small business. According to Jim McCabe, co-owner and president of Milwaukee Brewing Company; Miller Coors is “trying to fuzzy up the authenticity.”</p>
 
+			<figure class="img-float-left">
+				<img src="img/blue-moon.jpg">
+					<figcaption>
+						<p>Just another macro-brew?</p>
+					</figcaption>
+			</figure> 
+ 
+			<p>“They’ve tried like crazy to […] keep the margins on the industrial beer and that’s just not working so they have to come into the craft segment,” McCabe says. “The yellow fizzy stuff is declining. It just is.”</p>
+ 
+			<p>It always comes down the consumer though. Do drinkers looking for craft beer believe, or even care, whether what Tenth and Blake is doing is craft beer?</p>
+ 
+			<p>The bottom line is that Tenth and Blake beers sell, the brand’s quarterly growth has been in the double digits recently. Koopmeiners relates his craft line to a study the company did with University of North Carolina about how people consume beer.</p>
+ 
+			<p>“Do you eat sushi? What’s the first piece of sushi you had?” he asked.</p>
+ 
+			<p>The answer for most people is, of course, a California Roll. To Tenth and Blake, the California roll represents what they call “invitational beers” in the craft beer world.</p>
+ 
+			<p>Invitational beers include Blue Moon and Goose Island’s 312. These are often the first craft beers that people try, whether that’s due to their established popularity or their introductory-level flavor is open for debate.</p>
+ 
+			<p>The second tier is “exploration beer,” or full-flavored beers like IPAs and stouts. Many people happily settle in this sizeable, full-flavored tier.</p>
+ 
+			<p>Finally, the third – and least populated – tier, “experimentation beer.” As Koopmeiners refers to the group, “the people that’ll say ‘hell yeah, I’ll try chilies in my beer.’”</p>
+ 
+			<p>Drinkers may venture into the experimentation tier, but in Tenth and Blake’s experience, few ever stay.</p>
+ 
+			<p>“In the end, do you know what the number one selling sushi roll is?” Koopmeiners asks. “The California Roll.”</p>
+		</div>
+
+		<div class="tap">
+				<img src="img/tap-1.png">
+					<figcaption>
+						<p>Push to find the macros</p>
+					</figcaption>
+				<div class="coors-tab"><img src="img/coors-tab.png"></div>
+		</div>
+
+
+	</div><!--end container-->
  			
 	<div class="row" id="mkb">
 		<div class="info-mk">
 			<h1><a id="jim">Jim McCabe</a></h1>
-			<h3>Milwaukee Brewing Company / Milwaukee, Wisconsin</h3>
+			<h4>Milwaukee Brewing Company / Milwaukee, Wisconsin</h4>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row">
+			<img class="logo" src="img/mkb-logo.png">
 			<div class="span12">
-
-				<figure class="decorations">
-					<img src="img/decorations.png">
-						<p>“You’re running a marathon, not a sprint.”</p>
-				</figure>
-
-			<p>Nunc varius arcu eros, et iaculis augue tincidunt ut. In ac ultricies leo, eget pellentesque lectus. Mauris pulvinar feugiat dolor, quis posuere libero hendrerit in. Sed vitae tortor sed velit faucibus faucibus. Duis facilisis et elit vitae iaculis. Sed nec quam porttitor, scelerisque orci eget, lacinia orci. Nulla egestas pellentesque facilisis. Sed tristique nisl ante, non ultricies elit facilisis quis. Fusce molestie neque non feugiat ultricies.</p>
-			
-			<p>Sed sed lorem sit amet nunc accumsan gravida ac quis velit. Aliquam ullamcorper urna dolor, at convallis tortor commodo eget. Vestibulum aliquet, ipsum at bibendum varius, libero nulla ultrices dolor, quis blandit neque ante sed neque. Maecenas feugiat vulputate convallis. Praesent commodo placerat ante, ut elementum erat lobortis vitae. Nullam venenatis sem in nibh vulputate, non ornare leo dapibus. Etiam et justo sit amet nunc rutrum posuere a eu nisl. Sed nec magna mattis, pulvinar metus sed, aliquet nisi. Ut pharetra dui lacinia turpis tristique, sed vestibulum ligula vulputate. Nullam fermentum tortor mi, sed feugiat mi tincidunt at. Vivamus euismod mollis lobortis.<p>
-									
-			<p>Integer interdum a quam nec varius. Praesent iaculis tincidunt lacinia. Suspendisse cursus congue eros, eget vulputate dui gravida sed. Duis augue ligula, tincidunt vel mauris quis, gravida bibendum lectus. Nulla ante sapien, rutrum in augue in.</p>
+				<div class="span6">
+					<h2 class="nicknames">The Locavore <span id="vert-line">|</span></h2>
+				</div>
+				<div class="span3" id="mkb-list">
+					<ul>
+						<li>Opened: <strong>1933</strong></l1>
+						<li>Locations: <strong>38 States</strong></l1>
+						<li>Barrels: <strong>33,000/yr</strong></li>
+						<li>Best-seller: <strong>Fixed Gear</strong></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
-	</div><!--end fourth row-->
+
+		<div class="span12">
+			<p>Jim McCabe’s Milwaukee Ale House simultaneously looks brand new and like it’s been there forever. Half pub and half restaurant, the front of the Ale House houses a stage and a lengthy bar, behind which are 10 beer taps holding the carbonated goodness that built McCabe’s business. The back is filled with tables and wooden booths with a great view of the Milwaukee River.</p>
+ 
+			<p>McCabe opened his brewpub in 1996 on the back of his flagship brand, a smooth, severely underrated amber ale named Louie’s Demise, and built the Milwaukee Brewing Company brand over the next decade. The cornerstone of McCabe’s success as a brewer? “The pub was a way to get a market established and start turning Milwaukee on to full-flavored beer and what we were doing,” McCabe, the founder and president of Milwaukee Brewing Company, says.</p>
+ 
+			<p>While most craft brewers start by trying to market their beer to vendors, McCabe started with a plan that would put him in direct contact with his consumers from day one: a pub/restaurant hybrid. Brewpubs are inherently advantageous to brewers. The customer can provide direct feedback on the beer and that interaction creates a bond that ties a brewer to the community in a way that a six-pack on a shelf never could. For aspiring brewers, McCabe says he’d start the same way he did in 1996. He adds, however, that newcomers should know they’re running a restaurant too. Only get into it “if you’ve got the stomach for the retail side,” he says.</p>
+ 
+			<p>It’s solid advice. Brewpubs are historically successful, especially when compared to the restaurant business at large. “We’ve been tracking brewpubs since the early 1980s,” says Dr. Bart Watson, staff economist for the Brewers Association. “About 50 percent of brewpubs that have ever opened are still open.”</p>
+ 
+			<p>Compare that to the restaurant industry where three-in-five restaurants fail within the first three years. According to Watson, that differentiation from both restaurants and packaging breweries is what makes them successful in the long term. Craft breweries have been faring even better in recent years. In 2012, there were 409 brewery openings and only 43 closings, a net result of 366 breweries. “Good thing it was a leap year,” Watson says in his blog post from September 2013.</p>
+ 
+			<p>The difference in brewpubs and breweries, of course, is the economic investment required to start a packaging line. McCabe defends the notion that opening the brewpub is a better business plan than opening a brewery right off the bat. “I don’t think leveraging millions of dollars of investors’ money to spray beer around and hope that it sticks, I mean, it could work, but it’s a much riskier prospect than doing a brewpub,” McCabe says.</p>
+ 
+			<p>Eventually, Milwaukee Brewing Company’s popularity grew to justify opening a packaging brewery and in 2006, began selling their lineup in Milwaukee and throughout Wisconsin.</p>
+ 
+			<p>After seven years of brand building – including moving into the ultra-competitive Chicago market –Milwaukee Brewing Company is expanding their reach. The brewery plans to distribute to Indiana, Illinois, Iowa and Minnesota. “We don’t have aspirations of getting to Lagunitas’ size or anything like that,” McCabe says. “We’ll only let our beer go a relatively small distance from the brewery to keep it fresh and be able to keep the message on track.”</p>
+ 
+			<p>McCabe’s message doubles as his differentiation from the pack: using bold flavors and unique ingredients to intrigue drinkers. McCabe took his flagship amber ale, Louie’s Demise, and started brewing it with a number of Rishi teas including their Blueberry Rooibos tea. The result was Weekend at Louie’s, a refreshing beer that has a full-beer flavor but won’t weigh you down on a hot summer day. This winter, Milwaukee Brewing Company is planning a can-only release called Hop Freak, a double IPA infused with Rishi’s Jasmine Tea. The new beer is a result of brewpub experimentation. Last year at the Milwaukee Ale House, they offered a new IPA every month and Hop Freak is a combination of three ideas from that experiment. “It’s the creativity in flavor and just going for a true artisan product where we are boldly jumping into flavor opportunities without being cheesy,” McCabe says. “We’ve got an amazing crew of brewers that compliment each other very well in the creative realms.”</p>
+ 
+			<p>Breweries, like most businesses, are only as good as their people and McCabe believes in his team. McCabe and fellow investors currently own the brewery, but like many craft breweries reaching maturity, a succession plan is in McCabe’s sights. Breweries like New Belgium Brewing in Fort Collins, Colo. have become models for the rest of the industry. In December 2012, the brewery implemented an Employee Stock Ownership Program (ESOP) and made the brewery 100 percent employee owned. Watson, noting the independent streak in the industry, says that breweries around the country are privately planning succession events to keep their companies freestanding. “New Belgium is already employee owned,” Watson says. “So I think we’re going to see breweries doing things like that.”</p>
+ 
+			<p>“I love the New Belgium plan,” McCabe says. “We’d have an ESOP program and we’d fire the ownership through the ESOP program and make all these guys who are building this company, make them the owners.”</p>
+ 
+			<p>It’s a future that’s increasingly likely given the amount of time the pioneers in craft beer have put in. Combined with the high point in the industry, it might be the perfect time for some to cash out without selling to a giant company.</p>
+		</div>
+	</div><!--end container-->
  
 
 	
@@ -247,55 +358,124 @@
 	<div class="row" id="temperance">
 		<div class="info-t">
 			<h1><a id="josh">Josh Gilbert</a></h1>
-			<h3>Temperance Brewing Company / Evanston, Illinois</h3>
+			<h4>Temperance Brewing Company / Evanston, Illinois</h4>
 		</div>
 	</div>
 		
 	<div class="container">
-	<div class="row">
+		<div class="row">
+			<img class="logo" src="img/temperance-logo.png">
 			<div class="span12">
-
-				<figure class="decorations">
-					<img src="img/decorations.png">
-						<p>“You’re running a marathon, not a sprint.”</p>
-				</figure>
-
-
-				<p>Nunc varius arcu eros, et iaculis augue tincidunt ut. In ac ultricies leo, eget pellentesque lectus. Mauris pulvinar feugiat dolor, quis posuere libero hendrerit in. Sed vitae tortor sed velit faucibus faucibus. Duis facilisis et elit vitae iaculis. Sed nec quam porttitor, scelerisque orci eget, lacinia orci. Nulla egestas pellentesque facilisis. Sed tristique nisl ante, non ultricies elit facilisis quis. Fusce molestie neque non feugiat ultricies.</p>
-					
-				<p>Sed sed lorem sit amet nunc accumsan gravida ac quis velit. Aliquam ullamcorper urna dolor, at convallis tortor commodo eget. Vestibulum aliquet, ipsum at bibendum varius, libero nulla ultrices dolor, quis blandit neque ante sed neque. Maecenas feugiat vulputate convallis. Praesent commodo placerat ante, ut elementum erat lobortis vitae. Nullam venenatis sem in nibh vulputate, non ornare leo dapibus. Etiam et justo sit amet nunc rutrum posuere a eu nisl. Sed nec magna mattis, pulvinar metus sed, aliquet nisi. Ut pharetra dui lacinia turpis tristique, sed vestibulum ligula vulputate. Nullam fermentum tortor mi, sed feugiat mi tincidunt at. Vivamus euismod mollis lobortis.<p>
-									
-				<p>Integer interdum a quam nec varius. Praesent iaculis tincidunt lacinia. Suspendisse cursus congue eros, eget vulputate dui gravida sed. Duis augue ligula, tincidunt vel mauris quis, gravida bibendum lectus. Nulla ante sapien, rutrum in augue in.</p>
-			</div>
-		</div>
-	</div><!--end fifth row-->
- 
-
- 
-		<div class="row" id="pollyanna">
-			<div class="info-p">
-			<h1><a id="brian">Brian Pawola</a></h1>
-				<h3>Pollyanna Brewing Company / Lemont, Illinois</h3>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="span12">
-
-					<figure class="decorations">
-					<img src="img/decorations.png">
-						<p>“You’re running a marathon, not a sprint.”</p>
-					</figure>
-
-
-					<p>Nunc varius arcu eros, et iaculis augue tincidunt ut. In ac ultricies leo, eget pellentesque lectus. Mauris pulvinar feugiat dolor, quis posuere libero hendrerit in. Sed vitae tortor sed velit faucibus faucibus. Duis facilisis et elit vitae iaculis. Sed nec quam porttitor, scelerisque orci eget, lacinia orci. Nulla egestas pellentesque facilisis. Sed tristique nisl ante, non ultricies elit facilisis quis. Fusce molestie neque non feugiat ultricies.</p>
-
-					<p>Sed sed lorem sit amet nunc accumsan gravida ac quis velit. Aliquam ullamcorper urna dolor, at convallis tortor commodo eget. Vestibulum aliquet, ipsum at bibendum varius, libero nulla ultrices dolor, quis blandit neque ante sed neque. Maecenas feugiat vulputate convallis. Praesent commodo placerat ante, ut elementum erat lobortis vitae. Nullam venenatis sem in nibh vulputate, non ornare leo dapibus. Etiam et justo sit amet nunc rutrum posuere a eu nisl. Sed nec magna mattis, pulvinar metus sed, aliquet nisi. Ut pharetra dui lacinia turpis tristique, sed vestibulum ligula vulputate. Nullam fermentum tortor mi, sed feugiat mi tincidunt at. Vivamus euismod mollis lobortis.<p>
-
-					<p>Integer interdum a quam nec varius. Praesent iaculis tincidunt lacinia. Suspendisse cursus congue eros, eget vulputate dui gravida sed. Duis augue ligula, tincidunt vel mauris quis, gravida bibendum lectus. Nulla ante sapien, rutrum in augue in.</p>
+				<div class="span6">
+					<h2 class="nicknames">The Upstart <span id="vert-line">|</span></h2>
+				</div>
+				<div class="span3" id="temperance-list">
+					<ul>
+						<li>Opened: <strong>1933</strong></l1>
+						<li>Locations: <strong>38 States</strong></l1>
+						<li>Barrels: <strong>33,000/yr</strong></li>
+						<li>Best-seller: <strong>Fixed Gear</strong></li>
+					</ul>
 				</div>
 			</div>
-	</div><!--end row six-->
+		</div>
+
+		
+		<div class="span12">
+			<p>The combined smell of disinfectant and sugared malt hang in the air.  At the kettles, the brewers test samples of the grain heavy mash and its run off, sugar water, signaling that the boiling process is ready to begin. The shiny silver complexion of the fermentation kegs dominates the view, as they go through the last steps of sterilization ready to receive the boiled wort destined to become Temperance Beer Company’s new IPA, Gatecrasher.</p>   
+
+			<p>“One of the things I love about beer versus wine is there's such a breadth of styles and some things that you could put right next to each other and say, really, these are both beer?,”  says Josh Gilbert, founder and owner of Temperance Beer in Evanston, Ill.  “When you have that first sip of beer like, ohhh man, I needed that.  It’s, you know, basically putting the smile on people’s faces, making their life a little bit better hopefully."</p>
+
+			<p>Gilbert decided to put his passion for brewing into action after the housing market crash of 2008 threatened the viability of his two-person architecture practice.  But opening Temperance in 2012  threw him into a different kind of glut: his was one of 409 craft breweries that opened across the nation last year.</p> 
+
+			<p>If you enter the market with 2,500-plus other great craft brewers around and you’re not differentiating yourself, if you’re not producing great craft beer, you’re going to get slammed by market realities,” says Bart Watson, PhD, staff economist at the Brewers Association, who has watched the number of craft breweries rise from less than 50 in the 1980s to 2,347 in 2012.</p>
+
+			<p>Gilbert, however, has optimism in his ability to differentiate his product and expand by using his unique position as the first brewery in Evanston, which is the historical homebase of the Women’s Christian Temperance Union , namesake of the brewery.   “I had the idea for the brewery before Chicago proper sort of blew up with breweries opening, but now it’s nice to be sort of in the same market, but not in the same city as the majority of breweries in the area,” Gilbert says.  “It’s something that makes us a little bit different, a little bit off the beaten path.  In Chicago, we would’ve just been another brewery.”</p> 
+
+			<p>But for Gilbert to succeed he needs to gain access to taps at local restaurants and bars, as well as limited shelf space in stores.  Without popularity and people willing to buy the product, Jeff Koopmeiners, Manager of Strategy and Projects at Tenth and Blake, MillerCoors craft division, says a small, unknown brewery’s beer will just collect dust on the shelves. “I’m not going to offer the little brewery that just opened in Evanston,” says Koopmeiners, putting himself in the shoes of a liquor store owner. “Craft beer is going to grow, but it’s going to be the large, regional breweries that do well.”</p>
+
+			<p>“Temperance is on thin ice just because they’re new,” agrees Zach Smith, aspiring Cicerone and product manager at World of Beer in Evanston, Ill., where the bar is lined with taps that offer all varieties of craft beer. Even with 50 beers on tap, he says he can’t even come close to the number of brands available in Chicago alone.</p>
+
+			<p>Gilbert has his beer on tap at a couple of restaurants in Evanston and remains positive about his chances of getting more.   “To stand out now, you have to have great beer, of course, but there needs to be a story,” he says.  “This is what Big Beer doesn’t have, which is why they have to make expensive commercials.  Being Evanston’s only brewery certainly helps us get on tap in our hometown.  Beyond that, we are going out to potential accounts telling our story and sharing our beer.”</p> 
+
+			<p>To create good beer, Gilbert  approaches brewing the same way he approached architectural drawing, as an art, stretching innovation with styles and flavors from blueberry wheat ale to his chicory and licorice porter.  “What we’re going for is basically eclectic,” Gilbert says.  “All of our beers together, there isn’t a common theme in terms of style.  We don’t want to fit into a category.  Each one is designed to be fresh and exciting.”</p> 
+
+			<p>That might be what helps Temperance succeed.  Josh Barto, a homebewer and brewery navigations specialist at Lakefront Brewery in Milwaukee, Wis., says that just one good beer can’t carry a company. “I think that’s what a lot of micro and craft breweries, those really small guys who are like ‘we make fantastic red ale, this has got to make us big,’” he says.  “And they focus on that so much, they don’t have the enough time to really focus and perfect the other beers.” Temperance has developed five recipes within the first year of business; the beers have only been on the market since September.</p>  
+
+			<p>As Gilbert prepares for the opening of his taproom , he remains optimistic about his survival in the industry and his ability to grow.  His dreams include a future urban beer garden in the parking lot of where he has already planted a tree in anticipation.  “I really only had my sights set on becoming a regional brewery, not what’s beyond that,”  he says.  “We’re not trying to take over the world or anything, but we would like to be able to make enough beer that the people who want to drink it will be able to get it and it won’t be something that’s only available in a few places.”</p> 
+
+			<p>And staying local may make it easier to differentiate, especially in a small market like Evanston. “Micros that work within their local market and connect with consumers more directly are going to have a lot of opportunities to succeed,” Watson says.  “In local markets, small brewers are still having opportunities to get on shelves, to get on tap handles.”</p>
+
+			<p>Gilbert sees himself maintaining a community feel with his customers and inspiring in them a love of his beer.  “Maybe those breweries whose beer hasn’t instilled a passion in the public might disappear,” Gilbert says.  “But predicting the future – even by economists – has been notoriously unreliable.  So, I’m just going to enjoy the ride.”</p>
+		</div>
+	</div><!--end container-->
+ 
+
+ 
+	<div class="row" id="pollyanna">
+		<div class="info-p">
+			<h1><a id="brian">Brian Pawola</a></h1>
+			<h4>Pollyanna Brewing Company / Lemont, Illinois</h4>
+		</div>
+	</div>
+		
+	<div class="container">
+		<div class="row">
+			<img class="logo" src="img/pollyanna-logo.png">
+				<div class="span12">
+					<div class="span6">
+						<h2 class="nicknames">The New Guy <span id="vert-line">|</span></h2>
+					</div>
+					<div class="span3" id="polly-list">
+						<ul>
+							<li>Opened: <strong>1933</strong></l1>
+							<li>Locations: <strong>38 States</strong></l1>
+							<li>Barrels: <strong>33,000/yr</strong></li>
+							<li>Best-seller: <strong>Fixed Gear</strong></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<div class="span12">
+			<p>"You're not going to be Jim Koch. You're not going to be a billionaire." - Dr. Bart Watson, Staff Economist, Brewers Association.</p> 
+
+<p>One might think the prospect of entering the increasingly saturated craft beer market at time when the novelty of it all may be wearing off is a risky proposition, but if you ask 27-year-old Brian Pawola, brewer and co-partner at Lemont, Illinois-based Pollyanna Brewery Company, his decision was a no-brainer.</p> 
+
+<p>"I home-brewed basically the first day I turned 21, so about six or seven years," says Pawola, finding it hard not to crack a smile when discussing his favorite topic. Pawola previously made a living in healthcare IT, contracting with hospitals to analyze their workflows and implement their electronic medical records. "But, doctors and nurses aren't the easiest people to deal with," he admits. "People that drink beer are a little bit more fun to deal with, you could say that."</p>
+
+
+<!--MODAL-->
+<div class="modal-sidebar">
+	<h2 class="modal-head">The Blueprint</h2>
+<p class="modal-graph">Brian Pawola's brewery is set to hold this many gallons of beer and blah blah blah numbers stats numbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsnumbers statsand he's already got the<a href="#" id="btn-show-modal"> blueprint </a>written up.</p> 
+<div class="modal hide fade" id="myModal">
+
+<div class="modal-header">
+	<h4>Pollyanna Brewery Blueprint</h4>
+
+<div class="modal-body">
+	<img src="img/pollyanna-blueprint.jpg">
+
+<div class="modal-footer">
+	<a href="#" data-dismiss="modal" class="btn">Close</a> 
+
+</div>	
+</div>
+</div>
+</div> 
+</div>
+<!--END MODAL-->
+
+
+<p>After five years of waking up every morning with a groan of "Why am I doing this?," he finally decided it was time to start doing what he loved, regardless of the financial repercussions.</p> 
+
+<p>"Financially, my decision to go into brewing would be considered stupid by a lot of people," Pawola says. "IT is a pretty lucrative business. But, when people would ask me what I wanted to do in five years, all I could really say was, ‘not this,’ and eventually it was just a decision about being truly happy with my career.”</p>
+
+<p>But Pawola also knew that in order to achieve success, he first had to refine his skills. "No one wants to hire a homebrewer to be their head brewer," he explains. So, shortly after leaving his job, he enrolled in the Siebel Institute of Technology, America's oldest brewing school, to tackle its Master Brewer Program.  Although based in Chicago, Siebel eventually flies its students to its campus in Munich, Germany, for 12 weeks of hands-on brewing, where they're able to experience a variety of brewing systems and both traditional and newer types of industry technology. This sort of tutelage doesn't come cheap - it'll set you back nearly $26,000 - but Pawola points out that one of the primary benefits is that it teaches students more than just the intricacies of making a great beer in a production-sized brewery, but also about consistency between batches, which comes from extensive knowledge of yeast and yeast handling that's hard to pickup without an education.</p> 
+
+<p>Pawola's current position at Pollyanna came as a result of Smokey Row Brewery - the brewery that hired him straight out of school - dissolving due to legal issues. Pollyanna rose from the ashes, leaving Pawola and five partners with the space previously designated for Smokey Row to begin their production. And they plan to enter the industry with a high scale, guns blazing.</p> 
+		</div>	
+	</div><!--end container-->
 		 	
 	
 <!--==============END DOCUMENT=======================>
@@ -303,10 +483,16 @@
 		<!-JavaScript -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
+		<!--jQuery UI-->
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<!--Snap Scroll-->
 		<script type="text/JavaScript" src="js/jquery.scroll_to.js"></script>
  		<script type="text/JavaScript" src="js/jquery.snapscroll.js"></script>
+		<!--Timeline-->
+		<script type="text/javascript" src="js/jquery.jqtimeline.js"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
 		<script src="js/project.js"></script>
+
 
 	
 	</body>
