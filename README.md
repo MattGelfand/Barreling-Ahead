@@ -1,4 +1,4 @@
 craft-beer-story
 ================
 
-Capstone for Medill final project
+Interactive story about state of the craft beer industry. Final project @ Medill. 
